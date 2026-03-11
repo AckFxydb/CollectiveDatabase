@@ -2,21 +2,15 @@ body {
     margin: 0;
     min-height: 100vh;
 
-    background:
-        /* LEFT glow */
-        linear-gradient(to right, rgba(0,255,150,0.18), transparent 120px),
-
-        /* RIGHT glow */
-        linear-gradient(to left, rgba(0,255,150,0.18), transparent 120px),
-
-        /* TOP glow */
-        linear-gradient(to bottom, rgba(0,255,150,0.12), transparent 120px),
-
-        /* BOTTOM glow */
-        linear-gradient(to top, rgba(0,255,150,0.12), transparent 120px),
-
-        /* base background */
-        #0a0a0a;
+    /* background image */
+    background-image: url('images/bg.jpg'); /* replace with your path */
+    background-size: cover; /* make it fill the screen */
+    background-position: center; /* center it nicely */
+    background-repeat: no-repeat;
+    
+    /* optional: overlay for dark center + edge glow */
+    background-color: #0a0a0acc; /* dark overlay base */
+    background-blend-mode: overlay;
 
     color: #33ff99;
     font-family: 'VT323', monospace;
@@ -66,4 +60,66 @@ a:hover {
 footer {
     margin-top: 40px;
     color: #555;
+}
+
+.support {
+    color: #aaa;
+    margin-top: 25px;
+}
+
+.kofi-link img {
+    margin-top: 10px;
+    height: 45px;
+    filter: brightness(0.9) drop-shadow(0 0 6px #00ffaa);
+    transition: 0.2s ease;
+}
+
+.kofi-link img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1) drop-shadow(0 0 10px #00ffaa);
+}
+
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    table-layout: auto; /* allow extra column to fit nicely */
+}
+
+.project-table th {
+    text-align: left;
+    padding-bottom: 10px;
+    color: #00ffaa;
+    border-bottom: 1px dashed #33ff99;
+}
+
+.project-table td {
+    padding: 10px 0;
+    border-bottom: 1px dotted #222;
+}
+
+/* status styles */
+.status.active {
+    color: #00ffaa;
+    text-shadow: 0 0 6px #00ffaa;
+}
+
+.status.experimental {
+    color: orange;
+}
+
+.status.wip {
+    color: yellow;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 70px; /* adjust size */
+    opacity: 0.9;
+    filter: drop-shadow(0 0 8px #00ffaa);
 }
