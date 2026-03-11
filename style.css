@@ -1,0 +1,52 @@
+body {
+    background: #0a0a0a;
+    color: #33ff99;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+h1 {
+    color: #00ffaa;
+    text-shadow: 0 0 10px #00ffaa;
+}
+
+.tagline {
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.terminal {
+    border: 2px solid #33ff99;
+    padding: 25px;
+    background: #050505;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin: 15px 0;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+footer {
+    margin-top: 40px;
+    color: #555;
+}
